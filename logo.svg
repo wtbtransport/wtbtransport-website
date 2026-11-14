@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-labelledby="title desc">
+  <title id="title">WTB Transport</title>
+  <desc id="desc">WTB Transport wordmark in black with a red road stripe.</desc>
+  <rect width="760" height="250" fill="none"/>
+  <g fill="#111111" font-family="Impact, 'Arial Black', sans-serif" font-weight="900">
+    <text x="24" y="132" font-size="150" letter-spacing="-8">WTB</text>
+    <text x="24" y="232" font-size="83" letter-spacing="8">TRANSPORT</text>
+  </g>
+  <path d="M22 150 L300 150 L386 128 L732 128 L732 169 L372 169 L290 190 L22 190 Z" fill="#ed1c24" stroke="#111111" stroke-width="8" stroke-linejoin="miter"/>
+</svg>
