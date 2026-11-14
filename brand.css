@@ -1,7 +1,7 @@
 :root{--logo-red:#ed1c24}
 /* Use the supplied WTB wordmark throughout the site header and footer. */
-.brand-mark{width:166px;height:58px;flex:0 0 166px;padding:0;background:url('logo.svg') center/contain no-repeat;color:transparent;font-size:0;line-height:0;transform:none;box-shadow:none}
+.brand-mark{width:166px;height:58px;flex:0 0 166px;padding:0;background:url('logo-dark.png') center/contain no-repeat;color:transparent;font-size:0;line-height:0;transform:none;box-shadow:none}
 .brand-mark:after{display:none}
 .brand-name{display:none}
-.brand-footer .brand-mark{background-image:url('logo-white.svg')}
+.brand-footer .brand-mark{background-image:url('logo-light.png')}
 @media(max-width:520px){.brand-mark{width:142px;height:50px;flex-basis:142px}}
