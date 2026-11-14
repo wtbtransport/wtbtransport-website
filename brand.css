@@ -3,6 +3,6 @@
 .brand-mark{width:166px;height:58px;flex:0 0 166px;padding:0;background:url('logo-dark.png') center/contain no-repeat;color:transparent;font-size:0;line-height:0;transform:none;box-shadow:none}
 .brand-mark:after{display:none}
 .brand-name{display:none}
-.brand-footer .brand-mark{background-image:url('logo-light.png')}
+.brand-footer .brand-mark{background-image:url('logo-footer.svg')}
 .service-icon{color:var(--red)}
 @media(max-width:520px){.brand-mark{width:142px;height:50px;flex-basis:142px}}
