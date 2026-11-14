@@ -9,3 +9,12 @@
 .photo-tile figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 15px;color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;background:linear-gradient(transparent,rgba(0,0,0,.72))}
 @media(max-width:760px){.photo-gallery{padding:64px 0}.photo-gallery-heading{align-items:flex-start;flex-direction:column}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 170px}.photo-tile:first-child{grid-column:1/-1}}
 @media(max-width:480px){.photo-grid{grid-template-columns:1fr;grid-template-rows:220px 180px 180px}.photo-tile:first-child{grid-column:auto}}
+/* Looping road footage behind the track-record band */
+.trust-band-video{padding:120px 0;isolation:isolate;background:var(--navy) url('truck-on-road-poster.jpg') center 40%/cover no-repeat}
+.trust-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0}
+.trust-band-video:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,17,24,.9) 0%,rgba(8,17,24,.62) 55%,rgba(8,17,24,.82) 100%)}
+.trust-band-video:after{z-index:1}
+.trust-band-video .trust-inner{z-index:2}
+.trust-band-video .trust-stats span{color:#d4dadd}
+@media(max-width:760px){.trust-band-video{padding:80px 0}}
+@media(prefers-reduced-motion:reduce){.trust-video{display:none}}
