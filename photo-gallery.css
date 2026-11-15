@@ -9,6 +9,9 @@
 .photo-tile figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 15px;color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;background:linear-gradient(transparent,rgba(0,0,0,.72))}
 @media(max-width:760px){.photo-gallery{padding:64px 0}.photo-gallery-heading{align-items:flex-start;flex-direction:column}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px;grid-auto-rows:170px}.photo-tile:first-child{grid-column:1/-1}}
 @media(max-width:480px){.photo-grid{grid-template-columns:1fr;grid-template-rows:220px;grid-auto-rows:180px}.photo-tile:first-child{grid-column:auto}}
+.about-story-photo{margin:35px 0 0}
+.about-story-photo img{display:block;width:100%;height:auto}
+.about-story-photo figcaption{margin-top:10px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.08em}
 .fleet-video-section{position:relative;isolation:isolate;overflow:hidden;min-height:440px;display:flex;align-items:center;padding:88px 0;color:#fff;background:var(--navy) url('flatbed-loading-poster.jpg') center/cover no-repeat}
 .fleet-video-section video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .fleet-video-section:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,17,24,.94),rgba(8,17,24,.55))}
