@@ -9,13 +9,16 @@
 .photo-tile figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 15px;color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;background:linear-gradient(transparent,rgba(0,0,0,.72))}
 @media(max-width:760px){.photo-gallery{padding:64px 0}.photo-gallery-heading{align-items:flex-start;flex-direction:column}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px;grid-auto-rows:170px}.photo-tile:first-child{grid-column:1/-1}}
 @media(max-width:480px){.photo-grid{grid-template-columns:1fr;grid-template-rows:220px;grid-auto-rows:180px}.photo-tile:first-child{grid-column:auto}}
-.fleet-video-section{padding:88px 0;background:#fff}
-.fleet-video-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center}
-.fleet-video-grid>div>p:not(.eyebrow){color:var(--muted)}
-.fleet-video-figure{margin:0;min-width:0}
-.fleet-video-figure video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--navy)}
-.fleet-video-figure figcaption{margin-top:10px;color:var(--muted);font-size:12px}
-@media(max-width:760px){.fleet-video-section{padding:64px 0}.fleet-video-grid{grid-template-columns:1fr;gap:28px}}
+.fleet-video-section{position:relative;isolation:isolate;overflow:hidden;min-height:440px;display:flex;align-items:center;padding:88px 0;color:#fff;background:var(--navy) url('flatbed-loading-poster.jpg') center/cover no-repeat}
+.fleet-video-section video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.fleet-video-section:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,17,24,.94),rgba(8,17,24,.55))}
+.fleet-video-content>p:not(.eyebrow){max-width:510px;color:#e0e5e8}
+.fleet-video-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.fleet-video-toggle{padding:13px 18px;border:1px solid rgba(255,255,255,.7);border-radius:3px;background:rgba(8,17,24,.4);color:#fff;font:700 13px 'DM Sans',Arial,sans-serif;cursor:pointer}
+.fleet-video-toggle:hover{background:rgba(255,255,255,.15)}
+.fleet-video-status{margin:12px 0 0;font-size:13px}
+.fleet-video-status:empty{display:none}
+@media(max-width:760px){.fleet-video-section{min-height:380px;padding:64px 0}}
 /* Looping road footage behind the track-record band */
 .trust-band-video{padding:120px 0;isolation:isolate;background:var(--navy) url('truck-on-road-poster.jpg') center 40%/cover no-repeat}
 .trust-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0}
