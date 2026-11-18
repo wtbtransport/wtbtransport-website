@@ -1,0 +1,19 @@
+.quote-detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-request-section .quote-form{margin-top:28px;padding:26px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.quote-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.quote-field{display:grid;gap:7px;color:var(--ink);font-size:12px;font-weight:700}
+.quote-field input,.quote-field select,.quote-field textarea{width:100%;padding:12px;border:1px solid #cbd2d5;border-radius:3px;background:#fff;color:var(--ink);font:500 14px 'DM Sans',Arial,sans-serif}
+.quote-field input,.quote-field select{min-height:48px}
+.quote-field textarea{min-height:130px;resize:vertical}
+.quote-field input:focus-visible,.quote-field select:focus-visible,.quote-field textarea:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.quote-field-full{grid-column:1/-1}
+.quote-form-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:22px}
+.quote-form-actions p{margin:0;color:var(--muted);font-size:12px}
+.quote-form button:disabled{cursor:wait;opacity:.65}
+.quote-form-status{min-height:1.65em;margin:14px 0 0;font-size:14px}
+.quote-form-status[data-state=success]{color:#237252}
+.quote-form-status[data-state=error]{color:#a22622}
+.quote-form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.quote-email-fallback{margin-top:20px;font-size:13px;color:var(--muted)}
+.quote-email-fallback a{font-weight:700}
+@media(max-width:560px){.quote-detail-grid,.quote-form-grid{grid-template-columns:1fr}.quote-field-full{grid-column:auto}.quote-request-section .quote-form{padding:18px}}
